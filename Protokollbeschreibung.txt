@@ -16,7 +16,7 @@ Danach die Datei aus dem Settings Ordner "BMS_ID101(BANK1,Zelle1)(set Data).txt"
 {"ID":101,"COMMAND":"status"}                           // Einfache Status Rückmeldung
 Beispiel:
 {"ID":  101,  "DATA":[3450.384    ,288.0936        ,253.9101       ,3450   ,25.185   ,8   ,0   ,19.5     ,-0.5     ,true          ,false]}
-{"ID":slaveid,"DATA":[ZellSpannung,Bal mA Berechnet,Bal mA gemessen,Chip mV,Chip Temp,PWM1,PWM2,Res1 Temp,Res2 Temp,Balancer Aktiv,Thermische abschaltung 
+{"ID":slaveid,"DATA":[ZellSpannung,Bal mA Berechnet,Bal mA gemessen,Chip mV,Chip Temp,PWM1,PWM2,Res1 Temp,Res2 Temp,Balancer Aktiv,Thermische abschaltung]} 
 
 Um den EEprom zu Löschen:
 {"ID":101,"COMMAND":"clearEE"}

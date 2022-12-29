@@ -1,0 +1,20 @@
+Arduino Settings:
+
+BOD Voltage         : 1,8V
+
+UART for Bootloader : UART0 alt Pins
+
+Chip                : ATtiny3227
+
+Clock               : 4Mhz
+
+millis()/micros()Timer  : default(TCB1)
+
+printf()            : minimal
+
+UPDI/alt-RST Pins   : No RST, UPDI enabled, 8sec Optiboot after Power ON or SW rst
+
+Startup Time         : 8ms
+
+Das Bootloader File muss im Ordner C:\Users\"Username"\AppData\Local\Arduino15\packages\megaTinyCore\hardware\megaavr\2.6.4\bootloaders\hex
+ausgetauscht werden.

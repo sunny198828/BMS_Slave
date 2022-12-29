@@ -1,8 +1,22 @@
+Ich nutze für die Serielle Kommunikation RealTerm.
+
+Jeder Slave Antwortet am Anfang mit seiner ID.
 Hier an einem Beispil ID 101                            // 1 Bank, 01 Zelle 1 ( Kann frei verändert werden ). 
-{"ID":0,"NEW_ID":101}                                   // Neue ID 101 maximal 255. Wenn id gesetzt ist kann sie nur durch eeprom löschen geändert werden.
+{"ID":0,"NEW_ID":101}                                   // Neue ID 101 1Byte Groß. Wenn id gesetzt ist kann sie nur durch eeprom löschen geändert werden.
 {"ID":101,"COMMAND":"voltage_divider","meter":3341}     // Der Wert muss mit einem Realtiv genauem Messgerät(Multimeter)gemessen werden. Eingabe in mV
 {"ID":101,"COMMAND":"measure_res"}                      // Die LED auf dem Slave leuchtet. 
                                                         // Es wird der Mosfet eingeschaltet und der Strom und die Zellspannunggemessen.
                                                         // Daraus wird der Balancer Wiederstand berechnet.(Shunt laut Schaltplan 100mOhm).
                                                         
-Danach die Datei "BMS_ID101(BANK1,Zelle1)(set Data).txt" an die Serielle Schnittstelle senden.
+Danach die Datei aus dem Settings Ordner "BMS_ID101(BANK1,Zelle1)(set Data).txt" an die Serielle Schnittstelle senden.
+
+{"ID":101,"COMMAND":"saveEE"}                           // Hier werden alle Einstellungen in den eeprom gesichert.
+{"ID":101,"COMMAND":"deviceReset"}                      // Der ATtiny resetet. 8 sec Bootloader Wartezeit.
+{"ID":101,"COMMAND":"dataSet"}                          // Rückmeldung über gesetzte Daten. Ist selbsterklärend.
+{"ID":101,"COMMAND":"status"}                           // Einfache Status Rückmeldung
+Beispiel:
+{"ID":  101,  "DATA":[3450.384    ,288.0936        ,253.9101       ,3450   ,25.185   ,8   ,0   ,19.5     ,-0.5     ,true          ,false]}
+{"ID":slaveid,"DATA":[ZellSpannung,Bal mA Berechnet,Bal mA gemessen,Chip mV,Chip Temp,PWM1,PWM2,Res1 Temp,Res2 Temp,Balancer Aktiv,Thermische abschaltung 
+
+Um den EEprom zu Löschen:
+{"ID":101,"COMMAND":"clearEE"}

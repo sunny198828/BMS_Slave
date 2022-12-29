@@ -1,8 +1,0 @@
-{"ID":101,"COMMAND":"bootloader"} 
-{"ID":102,"COMMAND":"bootloader"} 
-{"ID":103,"COMMAND":"bootloader"} 
-{"ID":104,"COMMAND":"bootloader"} 
-{"ID":105,"COMMAND":"bootloader"} 
-{"ID":106,"COMMAND":"bootloader"} 
-{"ID":107,"COMMAND":"bootloader"} 
-{"ID":108,"COMMAND":"bootloader"} 

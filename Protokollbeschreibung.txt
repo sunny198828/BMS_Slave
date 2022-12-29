@@ -5,4 +5,4 @@ Hier an einem Beispil ID 101                            // 1 Bank, 01 Zelle 1 ( 
                                                         // Es wird der Mosfet eingeschaltet und der Strom und die Zellspannunggemessen.
                                                         // Daraus wird der Balancer Wiederstand berechnet.(Shunt laut Schaltplan 100mOhm).
                                                         
-Danach die 
+Danach die Datei "BMS_ID101(BANK1,Zelle1)(set Data).txt" an die Serielle Schnittstelle senden.

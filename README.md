@@ -7,4 +7,6 @@ Sämtliche Daten werden auf dem EEPROM gespeichert.
 
 Die Kommunikation läuft über JSON.
 
-Beschreibung 
+Arduino Settings:
+BOD Voltage         : 1,8V
+UART for Bootloader : UART0 alt Pins

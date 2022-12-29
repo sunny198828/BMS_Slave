@@ -1,4 +1,5 @@
 Ich nutze für die Serielle Kommunikation RealTerm.
+DTR darf nicht gesetzt sein da sonst kein Slave Antwortet.
 
 Jeder Slave Antwortet am Anfang mit seiner ID.
 Hier an einem Beispil ID 101                            // 1 Bank, 01 Zelle 1 ( Kann frei verändert werden ). 

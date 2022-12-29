@@ -1,5 +1,5 @@
 # BMS_Slave
-Hier veröffentliche ich mein BMS Project. Die Slave sind auf Basis ATtiny3227 und in Arduino Programiert.
+Hier veröffentliche ich mein BMS Project. Die Slave sind auf Basis ATtiny3227 und in Arduino Programmiert.
 
 Jeder Slave hat einen Bootloader(optiboot_x) der modifiziert wurde. Baud ist 9600.
 

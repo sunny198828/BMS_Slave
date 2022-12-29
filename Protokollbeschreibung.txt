@@ -1,0 +1,7 @@
+Hier an einem Beispil ID 101                            // 1 Bank, 01 Zelle 1 ( Kann frei verändert werden ). 
+{"ID":0,"NEW_ID":101}                                   // Neue ID 101 maximal 255. Wenn id gesetzt ist kann sie nur durch eeprom löschen geändert werden.
+{"ID":101,"COMMAND":"voltage_divider","meter":3341}     // Der Wert muss mit einem Realtiv genauem Messgerät(Multimeter)gemessen werden. Eingabe in mV
+{"ID":101,"COMMAND":"measure_res"}                      // Die LED auf dem Slave leuchtet. Es wird der Mosfet eingeschaltet und der Strom und die Zellspannunggemessen.
+                                                        // Daraus wird der Balancer Wiederstand berechnet.(Shunt laut Schaltplan 100mOhm).
+                                                        
+{"ID":101,"COMMAND":"setData","BAL_VOLTAGE":[3450,3448],"BAL_HIGH_VOLTAGE":[3650,3640],"BAL_DELAY":150,"NUM_RESISTORS":1,"BAL_MAX_CURR":750,"EXT_SHUNT_ON":1,"EXT_SHUNT_RES":0.00075}
